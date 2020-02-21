@@ -1,0 +1,8 @@
+---
+Name: mytheme
+---
+SilverStripe\View\SSViewer:
+  themes:
+    - 'stereo__style'
+    - '$public'
+    - '$default'

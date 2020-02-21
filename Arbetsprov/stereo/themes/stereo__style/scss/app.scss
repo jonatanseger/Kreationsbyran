@@ -1,0 +1,104 @@
+@import '~bootstrap/dist/css/bootstrap.css';
+
+$textColor: white;
+$pColor: darkgrey;
+$backColor: rgb(51, 51, 51);
+$blockColor: rgb(32, 30, 30);
+$smallDistance: 24px;
+$miniDistance: 12px;
+$lightWeight: 2200;
+$textAlign: center;
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: $backColor;
+    color: $textColor;
+    margin-left: $smallDistance;
+    margin-right: $smallDistance;
+}
+
+.container-fluid {
+    margin-top: 0px;
+}
+
+h1 {
+    padding-top: 24px;
+    font-size: $smallDistance;
+    text-align: $textAlign;
+    font-weight: 400;
+}
+
+p {
+    font-size: $miniDistance;
+    color: $pColor;
+    text-align: $textAlign;
+    padding-bottom: $smallDistance;
+}
+
+header img {
+    margin: auto;
+    display: block;
+    padding-bottom: $smallDistance*2;
+    padding-top: 8px;
+}
+
+.row {
+    background-color: $blockColor;
+    padding: $smallDistance*2;
+}
+.drink {
+    position: relative;
+    text-align: left;
+}
+footer {
+    position: relative;
+    text-align: center;
+    margin-bottom: 96px;
+}
+
+footer img {
+    width: 100%;
+    height: 100%;
+}
+
+.center-element, .centered-footer {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 96px;
+    
+}
+
+.center-element {
+    background-color: rgb(51, 51, 51, .4);
+}
+
+.center-element > p {
+    color: white;
+}
+
+.drink .center-element {
+    left: 50%;
+    top: 50%;
+}
+
+button {
+    background-color: $backColor;
+    color: $textColor;
+    border: none;
+    padding: $smallDistance;
+    outline: none !important;
+}
+button:hover {
+    background-color: $blockColor;
+}
+
+footer button {
+    padding: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 8px;
+}
+
